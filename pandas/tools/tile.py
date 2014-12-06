@@ -172,6 +172,8 @@ def qcut(x, q, labels=None, retbins=False, precision=3):
     return _bins_to_cuts(x, bins, labels=labels, retbins=retbins,precision=precision,
                          include_lowest=True)
 
+
+
 def _bins_to_cuts(x, bins, right=True, labels=None, retbins=False,
                   precision=3, name=None, include_lowest=False):
     x_is_series = isinstance(x, Series)
